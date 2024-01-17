@@ -11,7 +11,7 @@ Example usage:
 import sys
 from PyQt5.QtWidgets import QApplication
 
-from mage import ImageMage
+from imagemage.mage import ImageMage
 
 
 def main():
@@ -25,8 +25,9 @@ def main():
     app.setApplicationName("IMage")
     main_win = ImageMage()
     main_win.show()
-    sys.exit(app.exec_())
+
+    return app.exec_()
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())
