@@ -1,9 +1,9 @@
 import os
 
-from _version import __version__
+from imagemage._version import __version__
 
 # Get the package root directory
-package_source = os.path.dirname(os.path.abspath(__file__)) + "../"
+package_source = os.path.dirname(os.path.abspath(__file__)) + "/../"
 
 # Define some useful paths
 styles_dir = package_source + "styles/"
