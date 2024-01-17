@@ -1,0 +1,47 @@
+HistogramWidget {
+    background-color: rgba(0, 0, 30, 0.7); /* Window background color with alpha transparency */
+    color: #ffffff; /* Window text color */
+    border: 2px solid rgba(0, 0, 100, 0.8); /* Window border */
+    border-radius: 15px; /* Window border radius for rounded corners */
+    padding: 10px; /* Padding inside the window */
+    font-family: 'Hack Nerd Font Mono'; /* Font family for the window text */
+    font-size: 15px; /* Font size for the window text */
+}
+
+QFrame {
+    border: 2px solid rgba(0, 0, 100, 0.8); /* Window border */
+    border-radius: 15px; /* Window border radius for rounded corners */
+}
+
+QWidget {
+    border: none;
+}
+
+QCheckBox {
+    font-family: 'Hack Nerd Font Mono'; /* Font family for the window text */
+    font-size: 12px; /* Font size for the window text */
+    border: none;
+}
+
+LabeledLineEdit {
+    font-family: 'Hack Nerd Font Mono'; /* Font family for the window text */
+    font-size: 12px; /* Font size for the window text */
+    border: none;
+}
+
+QLabel {
+    font-family: 'Hack Nerd Font Mono'; /* Font family for the window text */
+    font-size: 12px; /* Font size for the window text */
+    border: none;
+}
+
+QLineEdit {
+    font-family: 'Hack Nerd Font Mono'; /* Font family for the window text */
+    font-size: 12px; /* Font size for the window text */
+    border-radius: none;
+    padding: 5px; /* Padding inside the window */
+}
+
+RangeSlider {
+    border: none;
+}

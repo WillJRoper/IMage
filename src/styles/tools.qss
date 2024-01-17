@@ -1,0 +1,38 @@
+ToolBar {
+    background-color: rgba(0, 0, 80, 255);
+    color: #B7B7B7;
+    border: 1px solid rgba(0, 0, 90, 255);
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-family: 'Hack Nerd Font Mono';
+    font-size: 13px;
+}
+
+ToolBar QIcon {
+    background-color: rgba(0, 0, 80, 255);
+    color: #B7B7B7;
+    border: 1px solid rgba(0, 0, 90, 255);
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-family: 'Hack Nerd Font Mono';
+    font-size: 13px;
+}
+
+ToolBar QToolButton {
+    background-color: rgba(0, 0, 80, 255);
+    color: #B7B7B7;
+    border: 1px solid rgba(0, 0, 90, 255);
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-family: 'Hack Nerd Font Mono';
+    font-size: 13px;
+}
+
+ToolBar QToolButton:hover {
+    background-color: #2980b9;
+}
+
+ToolBar QToolButton:pressed {
+    background-color: #1f618d;
+    border: 1px solid #1861ac;
+}
