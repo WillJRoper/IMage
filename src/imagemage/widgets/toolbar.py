@@ -5,8 +5,8 @@ from PyQt5.QtWidgets import QToolBar, QAction
 from PyQt5.QtGui import QIcon, QPixmap
 from PyQt5.QtCore import pyqtSignal, Qt
 
-
-from ..tools.hist import HistogramWidget
+from imagemage import icons_dir
+from imagemage import styles_dir
 
 
 class ToolBar(QToolBar):
@@ -21,7 +21,7 @@ class ToolBar(QToolBar):
         super(ToolBar, self).__init__("Tools", main_window)
 
         # Load the style sheet
-        with open("src/styles/tools.qss", "r") as f:
+        with open(f"{styles_dir}tools.qss", "r") as f:
             self.setStyleSheet(f.read())
 
         # Create tools
@@ -49,7 +49,7 @@ class ToolBar(QToolBar):
 
     def createActionWithIcon(self, icon_path, text):
         action = QAction(self)
-        action.setIcon(QIcon(os.path.join("src/icons", icon_path)))
+        action.setIcon(QIcon(os.path.join(icons_dir, icon_path)))
         action.setText(text)
         return action
 

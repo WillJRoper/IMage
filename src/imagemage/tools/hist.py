@@ -10,9 +10,10 @@ from matplotlib.backends.backend_qt5agg import (
 
 from PyQt5.QtWidgets import QWidget, QHBoxLayout, QLabel, QLineEdit, QFrame
 from PyQt5 import QtWidgets, QtCore
-from PyQt5.QtCore import pyqtSignal, QRect, Qt, QEvent
+from PyQt5.QtCore import pyqtSignal, QRect, Qt
 
-from widgets.range_slider import RangeSlider
+from imagemage import styles_dir
+from imagemage.widgets.range_slider import RangeSlider
 
 
 class LabeledLineEdit(QWidget):
@@ -174,7 +175,7 @@ class HistogramWidget(QFrame):
         QtCore.QMetaObject.connectSlotsByName(self)
 
         # Load the button style sheet
-        with open("src/styles/hist.qss", "r") as file:
+        with open(f"{styles_dir}hist.qss", "r") as file:
             style_sheet = file.read()
 
         self.setStyleSheet(style_sheet)

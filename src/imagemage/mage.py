@@ -2,11 +2,12 @@ from PyQt5.QtWidgets import QMainWindow
 from PyQt5.QtCore import Qt, pyqtSignal, QSize
 from PyQt5 import QtCore, QtWidgets
 
-from widgets.image import ImageView
-from widgets.menu import MenuBar
-from widgets.toolbar import ToolBar
-from widgets.workspace import Workspace
-from tools.utility_widgets import SideGrip
+from imagemage import styles_dir
+from imagemage.widgets.image import ImageView
+from imagemage.widgets.menu import MenuBar
+from imagemage.widgets.toolbar import ToolBar
+from imagemage.widgets.workspace import Workspace
+from imagemage.widgets.utility_widgets import SideGrip
 
 
 class ImageMage(QMainWindow):
@@ -44,7 +45,7 @@ class ImageMage(QMainWindow):
         self.setWindowTitle("Modular and Customizable UI")
 
         # Load the window style sheet
-        with open("src/styles/window.qss", "r") as f:
+        with open(f"{styles_dir}window.qss", "r") as f:
             self.setStyleSheet(f.read())
 
     def initUI(self):
