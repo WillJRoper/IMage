@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
-import sys, os
 from PyQt5 import QtCore, QtGui, QtWidgets
 
 # Originated from
