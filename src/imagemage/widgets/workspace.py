@@ -6,8 +6,8 @@ from PyQt5.QtWidgets import (
 )
 from PyQt5.QtCore import QPoint, pyqtSignal
 
-from hist import HistogramWidget
-from zoom import ZoomWidget
+from ..tools.hist import HistogramWidget
+from ..tools.zoom import ZoomWidget
 
 
 class Workspace(QFrame):

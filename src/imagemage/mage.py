@@ -1,13 +1,12 @@
-import sys
-from PyQt5.QtWidgets import QApplication, QMainWindow
+from PyQt5.QtWidgets import QMainWindow
 from PyQt5.QtCore import Qt, pyqtSignal, QSize
 from PyQt5 import QtCore, QtWidgets
 
-from image import ImageView
-from menu import MenuBar
-from tools import ToolBar
-from workspace import Workspace
-from utility_widgets import SideGrip
+from widgets.image import ImageView
+from widgets.menu import MenuBar
+from widgets.toolbar import ToolBar
+from widgets.workspace import Workspace
+from tools.utility_widgets import SideGrip
 
 
 class ImageMage(QMainWindow):
@@ -173,10 +172,3 @@ class ImageMage(QMainWindow):
 
         self.updateGrips()
         self.windowResized.emit(self.size())
-
-
-if __name__ == "__main__":
-    app = QApplication(sys.argv)
-    mainWindow = IMage()
-    mainWindow.show()
-    sys.exit(app.exec_())
