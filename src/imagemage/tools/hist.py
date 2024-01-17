@@ -123,7 +123,7 @@ class HistogramWidget(QFrame):
         # Horizontal layout for sliders and entries
         self.horizontalLayoutWidget = QtWidgets.QWidget(self)
         self.horizontalLayoutWidget.setGeometry(
-            self._scale_relative_to_size(0.05, 0.01, 0.9, 0.6)
+            self._scale_relative_to_size(0.05, 0.01, 0.9, 0.55)
         )
         self.horizontalLayoutWidget.setObjectName("horizontalLayoutWidget")
 
@@ -137,7 +137,7 @@ class HistogramWidget(QFrame):
         # Slider for vmin
         self.slider = RangeSlider(self)
         self.slider.setGeometry(
-            self._scale_relative_to_size(0.05, 0.75, 0.9, 0.1)
+            self._scale_relative_to_size(0.05, 0.58, 0.9, 0.2)
         )
         self.slider.setObjectName("slider")
         self.slider.setMinimum(self.img_min)
@@ -149,14 +149,14 @@ class HistogramWidget(QFrame):
         # Radio buttons for log scale
         self.log_x = QtWidgets.QCheckBox(self)
         self.log_x.setGeometry(
-            self._scale_relative_to_size(0.05, 0.85, 0.2, 0.15)
+            self._scale_relative_to_size(0.05, 0.8, 0.25, 0.18)
         )
         self.log_x.setObjectName("log_x")
         self.log_x.stateChanged.connect(self.update_hist)
 
         self.log_y = QtWidgets.QCheckBox(self)
         self.log_y.setGeometry(
-            self._scale_relative_to_size(0.30, 0.85, 0.25, 0.15)
+            self._scale_relative_to_size(0.30, 0.8, 0.25, 0.18)
         )
         self.log_y.setObjectName("log_y")
         self.log_y.stateChanged.connect(self.update_hist)
@@ -164,7 +164,7 @@ class HistogramWidget(QFrame):
         # Entry for the number of bins
         self.nbin_entry = LabeledLineEdit(label_text="bins:", parent=self)
         self.nbin_entry.setGeometry(
-            self._scale_relative_to_size(0.6, 0.85, 0.35, 0.15)
+            self._scale_relative_to_size(0.6, 0.8, 0.35, 0.18)
         )
         self.nbin_entry.setText(str(self.nbins))
         self.nbin_entry.setObjectName("nbin_entry")
